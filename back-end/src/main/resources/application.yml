@@ -1,0 +1,20 @@
+server:
+  port : 8080
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  jackson:
+    default-property-inclusion: NON_NULL # Include only non null properties in output
+  client:
+    websocket-url: ${WEBSOCKET_URL:ws://localhost:8081}
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shopme
+    username: postgres
+    password: password

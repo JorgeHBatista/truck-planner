@@ -1,0 +1,14 @@
+producer:
+  numberOfStartingAccesses: 1
+  entryDate: "2022-07-14 10:00:00"
+  exitDate: "2022-07-14 10:00:00"
+  entryPoint: "GATE1"
+  exitPoint: "GATE2"
+  identificationType: "QR"
+  period: 1
+  timeFactor: 10000
+  startingDate: "01/01/2022"
+  endingDate: "01/02/2022"
+
+server:
+  port : 8081
